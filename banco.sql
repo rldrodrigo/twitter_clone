@@ -5,4 +5,9 @@ CREATE TABLE usuarios(
     senha VARCHAR(32) NOT NULL
     )
 
-    
+CREATE TABLE tweets(
+	id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	id_usuario INT NOT NULL,
+    tweet VARCHAR(140) NOT NULL,
+	data datetime DEFAULT CURRENT_TIMESTAMP
+);
