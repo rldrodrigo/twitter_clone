@@ -86,4 +86,14 @@ class AppController extends Action
         }
         header('Location: /quem_seguir');
     }
+
+    public function excluir_tweet()
+    {
+
+        $tweet_id = $_GET['id'];
+        $tweet = Container::getModel('Tweet');
+        $tweet->excluir($tweet_id);
+
+        header('Location:/timeline');
+    }
 }
