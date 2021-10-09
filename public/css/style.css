@@ -184,3 +184,7 @@ h2 {
 .tweet:hover {
     background-color: #f5f8fa;
 }
+
+.imagem-perfil {
+    height: 100px;
+}
